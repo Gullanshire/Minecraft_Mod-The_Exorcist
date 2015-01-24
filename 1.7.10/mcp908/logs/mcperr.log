@@ -1,0 +1,4 @@
+14:12:36 - "scalac" is not found on the PATH.  Scala files will not be recompiled
+14:12:37 - !! Please install either wine or astyle for source cleanup !!
+14:14:07 - !! reformating disabled due to no astyle or config !!
+14:14:08 - !! Missing server jar file. Aborting !!
