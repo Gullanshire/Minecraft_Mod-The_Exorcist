@@ -9,4 +9,5 @@ c. Texture should be 16*16 images.<br>
 The path seems matters for eclipse to build up project.<br>
 Run script gradlew to install forge:<br>
 <code>./gradlew setupDecompWorkspace --refresh-dependencies</code><br>
-<code>./gradlew eclipse</code>
+<code>./gradlew eclipse</code><br>
+Must be similar under windows.
