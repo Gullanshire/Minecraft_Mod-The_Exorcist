@@ -1,13 +1,13 @@
-[00:35:33] [main/INFO]: Setting user: Player605
-[00:35:35] [Client thread/INFO]: LWJGL Version: 2.9.1
-[00:35:35] [Client thread/ERROR]: Couldn't initialize twitch stream
-[00:35:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Generic
-[00:35:39] [Sound Library Loader/INFO]: Sound engine started
-[00:35:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[00:35:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[00:35:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Generic
-[00:35:40] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4096_genericIngot.png
-java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4096_genericIngot.png
+[00:04:26] [main/INFO]: Setting user: Player635
+[00:04:28] [Client thread/INFO]: LWJGL Version: 2.9.1
+[00:04:28] [Client thread/ERROR]: Couldn't initialize twitch stream
+[00:04:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Generic
+[00:04:32] [Sound Library Loader/INFO]: Sound engine started
+[00:04:33] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[00:04:33] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[00:04:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Generic
+[00:04:33] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4096_Demon Fossil Pieces.png
+java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4096_Demon Fossil Pieces.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -29,9 +29,8 @@ java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4096_g
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-[00:35:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[00:35:40] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_165_myFirstBlock.png
-java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_165_myFirstBlock.png
+[00:04:33] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/items/MISSING_ICON_ITEM_4097_Heaven Fossil Pieces.png
+java.io.FileNotFoundException: minecraft:textures/items/MISSING_ICON_ITEM_4097_Heaven Fossil Pieces.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
 	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
@@ -53,38 +52,52 @@ java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_165_
 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
 	at GradleStart.main(GradleStart.java:45) [start/:?]
-[00:35:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[00:35:41] [Sound Library Loader/INFO]: Sound engine started
-[00:35:43] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[00:35:43] [Server thread/INFO]: Generating keypair
-[00:35:44] [Server thread/INFO]: Preparing start region for level 0
-[00:35:45] [Server thread/INFO]: Changing view distance to 12, from 10
-[00:35:45] [Server thread/INFO]: Player605[local:E:14740983] logged in with entity id 202 at (302.159093880606, 71.0, 82.50636364560093)
-[00:35:45] [Server thread/INFO]: Player605 joined the game
-[00:35:46] [Server thread/INFO]: Saving and pausing game...
-[00:35:46] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:35:46] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:35:46] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:35:48] [Server thread/INFO]: Player605 has just earned the achievement [Taking Inventory]
-[00:35:48] [Client thread/INFO]: [CHAT] Player605 has just earned the achievement [Taking Inventory]
-[00:35:55] [Server thread/INFO]: Saving and pausing game...
-[00:35:55] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:35:55] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:35:55] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:37:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2443ms behind, skipping 48 tick(s)
-[00:37:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 11318ms behind, skipping 226 tick(s)
-[00:37:40] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2234ms behind, skipping 44 tick(s)
-[00:37:59] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 5430ms behind, skipping 108 tick(s)
-[00:38:18] [Client thread/INFO]: Warning: Clientside chunk ticking took 102 ms
-[00:38:20] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6292ms behind, skipping 125 tick(s)
-[00:39:19] [Server thread/INFO]: Saving and pausing game...
-[00:39:19] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:39:20] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:39:20] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[00:44:27] [Client thread/INFO]: Stopping!
-[00:44:27] [Server thread/INFO]: Stopping server
-[00:44:27] [Server thread/INFO]: Saving players
-[00:44:27] [Server thread/INFO]: Saving worlds
-[00:44:27] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[00:44:27] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[00:44:27] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:04:33] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[00:04:33] [Client thread/ERROR]: Using missing texture, unable to load minecraft:textures/blocks/MISSING_ICON_BLOCK_165_Relic Fossil.png
+java.io.FileNotFoundException: minecraft:textures/blocks/MISSING_ICON_BLOCK_165_Relic Fossil.png
+	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTextureAtlas(TextureMap.java:126) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureMap.loadTexture(TextureMap.java:91) [TextureMap.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.loadTexture(TextureManager.java:89) [TextureManager.class:?]
+	at net.minecraft.client.renderer.texture.TextureManager.onResourceManagerReload(TextureManager.java:170) [TextureManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.notifyReloadListeners(SimpleReloadableResourceManager.java:134) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.resources.SimpleReloadableResourceManager.reloadResources(SimpleReloadableResourceManager.java:118) [SimpleReloadableResourceManager.class:?]
+	at net.minecraft.client.Minecraft.refreshResources(Minecraft.java:643) [Minecraft.class:?]
+	at cpw.mods.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:303) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:586) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:931) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:164) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.7.0_71]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[?:1.7.0_71]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_71]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_71]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:78) [start/:?]
+	at GradleStart.main(GradleStart.java:45) [start/:?]
+[00:04:33] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[00:04:34] [Sound Library Loader/INFO]: Sound engine started
+[00:04:36] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[00:04:36] [Server thread/INFO]: Generating keypair
+[00:04:36] [Server thread/INFO]: Preparing start region for level 0
+[00:04:37] [Server thread/INFO]: Changing view distance to 12, from 10
+[00:04:38] [Server thread/INFO]: Player635[local:E:888494aa] logged in with entity id 106 at (35.89605998837354, 64.0, 354.85065798245626)
+[00:04:38] [Server thread/INFO]: Player635 joined the game
+[00:04:42] [Server thread/INFO]: Player635 has just earned the achievement [Taking Inventory]
+[00:04:42] [Client thread/INFO]: [CHAT] Player635 has just earned the achievement [Taking Inventory]
+[00:04:56] [Server thread/INFO]: Saving and pausing game...
+[00:04:56] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:04:56] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:04:56] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:06:34] [Server thread/INFO]: Saving and pausing game...
+[00:06:34] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:06:34] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:06:34] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:06:35] [Server thread/INFO]: Stopping server
+[00:06:35] [Server thread/INFO]: Saving players
+[00:06:35] [Server thread/INFO]: Saving worlds
+[00:06:35] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[00:06:35] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[00:06:35] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[00:06:36] [Client thread/INFO]: Stopping!

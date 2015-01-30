@@ -1,0 +1,13 @@
+package tutorial.generic;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class MultiBlock extends Block {
+	public MultiBlock (int id) {
+		super(Material.ground);
+		this.setBlockName("multiBlock");
+		this.setCreativeTab(CreativeTabs.tabBlock);
+	}
+}

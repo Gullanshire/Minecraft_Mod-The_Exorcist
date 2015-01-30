@@ -1,7 +1,11 @@
 package tutorial.generic;
 
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler; // used in 1.6.2
 //import cpw.mods.fml.common.Mod.PreInit;    // used in 1.5.2
@@ -14,6 +18,8 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 //import cpw.mods.fml.common.network.NetworkMod; // not used in 1.7
 
 @Mod(modid="GenericModID", name="Generic", version="0.0.0")
@@ -24,12 +30,22 @@ public class Generic {
         @Instance(value = "GenericModID")
         public static Generic instance;
         
-        public static Block myFirstBlock;
-        public static Item myFirstItem;
+        public static Block relicFossilsBlock;
+        public static Item demonFossilsPieces;
+        public static Item heavenFossilsPieces;
         
         // Says where the client and server 'proxy' code is loaded.
         @SidedProxy(clientSide="tutorial.generic.client.ClientProxy", serverSide="tutorial.generic.CommonProxy")
         public static CommonProxy proxy;
+        
+        @SideOnly(Side.CLIENT)
+        public static CreativeTabs ExorcistCreativeTab = new CreativeTabs("Exorcist") {
+            @Override
+            @SideOnly(Side.CLIENT)
+            public Item getTabIconItem() {
+                return Items.ender_eye;
+            }
+        };
         
         @EventHandler // used in 1.6.2
         //@PreInit    // used in 1.5.2
@@ -41,14 +57,36 @@ public class Generic {
         //@Init       // used in 1.5.2
         public void load(FMLInitializationEvent event) {
                 proxy.registerRenderers();
-        		myFirstBlock = (new BlockFirst(538, 0)).setBlockName("myFirstBlock");
-        		myFirstItem = new ItemFirst()
-                .setMaxStackSize(16)
-                .setUnlocalizedName("myFirstItem");
-        		LanguageRegistry.addName(myFirstBlock, "My first block");
-        		LanguageRegistry.addName(myFirstItem, "My first item");
-        		GameRegistry.registerBlock(myFirstBlock,"myFirstBlock");
-                GameRegistry.registerItem(myFirstItem, "myFirstItem");
+
+        		ItemStack dirtstack1=new ItemStack(Blocks.dirt,1);
+        		ItemStack diamondstack=new ItemStack(Items.diamond,64);
+        		ItemStack woolStackBlack=new ItemStack(Blocks.wool);
+        		ItemStack woolStackWhite=new ItemStack(Blocks.wool);
+        		woolStackWhite.setItemDamage(1);
+        		woolStackBlack.setItemDamage(15);
+        		GameRegistry.addSmelting(Blocks.stone, new ItemStack(Items.diamond,64), 0.1f);
+        		GameRegistry.addSmelting(woolStackWhite,woolStackBlack,0.1f);
+        		GameRegistry.addRecipe(diamondstack, "xxx", " x ", "xxx",'x', dirtstack1);
+        		
+                //Relic_Fossils
+        		relicFossilsBlock= new Relic_Fossils_Block()
+        		.setBlockName("Relic Fossil")
+                .setCreativeTab(this.ExorcistCreativeTab);
+        		LanguageRegistry.addName(relicFossilsBlock,"Relic Fossil");
+        		GameRegistry.registerBlock(relicFossilsBlock,"Relic Fossil");
+        		//Demon fossil pieces
+        		demonFossilsPieces=new Demon_Fossils_Pieces()
+        		.setUnlocalizedName("Demon Fossil Pieces")
+                .setCreativeTab(this.ExorcistCreativeTab);
+        		LanguageRegistry.addName(demonFossilsPieces,"Demon Fossil Pieces");
+        		GameRegistry.registerItem(demonFossilsPieces,"Demon Fossil Pieces");
+        		//Heaven fossil pieces
+        		heavenFossilsPieces=new Heaven_Fossils_Pieces()
+        		.setUnlocalizedName("Heaven Fossil Pieces")
+                .setCreativeTab(this.ExorcistCreativeTab);
+        		LanguageRegistry.addName(heavenFossilsPieces,"Heaven Fossil Pieces");
+        		GameRegistry.registerItem(heavenFossilsPieces,"Heaven Fossil Pieces");
+        		
         }
         
         @EventHandler // used in 1.6.2

@@ -1,0 +1,10 @@
+package tutorial.generic;
+
+
+public static CreativeTabs tabCustom = new CreativeTabs("tabName") {
+    @Override
+    @SideOnly(Side.CLIENT)
+    public Item getTabIconItem() {
+        return Items.ender_eye;
+    }
+};
