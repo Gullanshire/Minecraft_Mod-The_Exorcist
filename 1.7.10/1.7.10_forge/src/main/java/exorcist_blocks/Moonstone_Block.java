@@ -2,14 +2,10 @@ package exorcist_blocks;
 
 import java.util.Random;
 
-import exorcist.Generic;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.util.MathHelper;
+import exorcist_items.Main_Items;
 
 public class Moonstone_Block extends Block {
 	public Moonstone_Block(){
@@ -25,7 +21,7 @@ public class Moonstone_Block extends Block {
     
     public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
     {
-    	return Generic.moonstone;
+    	return Main_Items.moonstone;
     }
     
     public int quantityDropped(Random p_149745_1_)

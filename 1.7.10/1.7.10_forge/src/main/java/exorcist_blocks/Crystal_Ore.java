@@ -2,14 +2,11 @@ package exorcist_blocks;
 
 import java.util.Random;
 
-import exorcist.Generic;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.MathHelper;
+import exorcist_items.Main_Items;
 
 public class Crystal_Ore extends Block {
 	public Crystal_Ore(){
@@ -29,11 +26,11 @@ public class Crystal_Ore extends Block {
     	int j1=0;
     	j1 = MathHelper.getRandomIntegerInRange(rand, 1, 5);
     	if(j1==1||j1==2||j1==3)
-        return Generic.crystal;
+        return Main_Items.crystal;
     	else if(j1==4)
-    	return Generic.crystalBlue;
+    	return Main_Items.crystalBlue;
     	else
-    	return Generic.crystalPurple;
+    	return Main_Items.crystalPurple;
     }
     
     public int quantityDropped(Random p_149745_1_)

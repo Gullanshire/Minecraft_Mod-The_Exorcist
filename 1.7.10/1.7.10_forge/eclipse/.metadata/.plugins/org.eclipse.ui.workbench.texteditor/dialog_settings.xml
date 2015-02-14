@@ -2,19 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="287" key="DIALOG_WIDTH"/>
-		<item value="195" key="DIALOG_Y_ORIGIN"/>
-		<item value="818" key="DIALOG_X_ORIGIN"/>
-		<item value="494" key="DIALOG_HEIGHT"/>
+		<item value="476" key="DIALOG_Y_ORIGIN"/>
+		<item value="524" key="DIALOG_HEIGHT"/>
+		<item value="1042" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="" key="selection"/>
+		<item value="onItemRightClick" key="selection"/>
 		<list key="findhistory">
+			<item value="onItemRightClick"/>
+			<item value="p_77644_2_"/>
+			<item value="EntityLivingBase"/>
+			<item value="target"/>
+			<item value="func_111207"/>
 			<item value="testure"/>
 			<item value="myFirstBlock"/>
 		</list>

@@ -7,6 +7,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
+import exorcist_blocks.Main_Blocks;
 
 public class EventManager implements IWorldGenerator{
 
@@ -25,12 +26,12 @@ public class EventManager implements IWorldGenerator{
 
     private void generateEnd(World world, Random random, int i, int j) {
 		// TODO Auto-generated method stub
-		this.addOreSpawn(Generic.crystalOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
-		this.addOreSpawn(Generic.gemOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
-		this.addOreSpawn(Generic.micaOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
-		this.addOreSpawn(Generic.moonstoneOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
-		this.addOreSpawn(Generic.ruinsOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
-		this.addOreSpawn(Generic.silverOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
+		this.addOreSpawn(Main_Blocks.crystalOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
+		this.addOreSpawn(Main_Blocks.gemOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
+		this.addOreSpawn(Main_Blocks.micaOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
+		this.addOreSpawn(Main_Blocks.moonstoneOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
+		this.addOreSpawn(Main_Blocks.ruinsOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
+		this.addOreSpawn(Main_Blocks.silverOre, world, random, i, j, 16, 16, 3+random.nextInt(4), 10, 15, 160);
 	}
 
 

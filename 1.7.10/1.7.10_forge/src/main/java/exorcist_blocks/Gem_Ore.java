@@ -2,14 +2,11 @@ package exorcist_blocks;
 
 import java.util.Random;
 
-import exorcist.Generic;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.MathHelper;
+import exorcist_items.Main_Items;
 
 public class Gem_Ore extends Block {
 	public Gem_Ore(){
@@ -29,9 +26,9 @@ public class Gem_Ore extends Block {
     	int j1=0;
     	j1 = MathHelper.getRandomIntegerInRange(rand, 1, 2);
     	if(j1==1)
-        return Generic.ruby;
+        return Main_Items.ruby;
     	else
-    	return Generic.sapphire;
+    	return Main_Items.sapphire;
     }
     
     public int quantityDropped(Random p_149745_1_)
